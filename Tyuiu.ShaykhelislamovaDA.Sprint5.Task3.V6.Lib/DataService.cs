@@ -8,7 +8,7 @@ namespace Tyuiu.ShaykhelislamovaDA.Sprint5.Task3.V6.Lib
         {
             string path = Path.GetTempFileName();
 
-            double res = Math.Round((double)x / Math.Pow(x * x + x, 1 / 2), 3);
+            double res = Math.Round((double)x / Math.Pow((double)x * x + x, 0.5), 3);
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
