@@ -15,6 +15,10 @@ namespace Tyuiu.ShaykhelislamovaDA.Sprint5.Task6.V21.Lib
                     {
                         count++;
                     }
+                    for (int i = 0; (i = line.IndexOf("Тт", i)) != -1; i++)
+                    {
+                        count++;
+                    }
                 }
             }
             return count;
